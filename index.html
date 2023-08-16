@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Collab</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/cae0832f66.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.1/socket.io.js"></script>
+</head>
+
+<body>
+    <h1 class="head">Code-Collaborator</h1>
+    <div class="lobby">
+        <input type="text" id="RoomName" placeholder="Enter the room name: ">
+        <button id="join">Join Room</button>
+        <button id="newRoom">Create a New Room</button>
+    </div>
+
+    <h1 id="RoomTitle"></h1>
+    <button id="createFolder" onclick="createFolder()">Create Folder & Download Files</button>
+    <button id="saveRoom" onclick="saveRoom()">Save Room </button>
+    <div id="codeContainer" class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i> HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-css3-alt"></i> CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+            <label><i class="fa-brands fa-square-js"></i> JavaScript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i> Output </label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+</html>
+
+
+<!-- // var socket = io('/my');
+        // socket.on("myevent", (data)=>
+        // {
+        //     document.write(data.data);
+        // })
+        // const btn = document.querySelector("#b");
+        // btn.addEventListener("click",(e)=>
+        // {
+        //     e.preventDefault();
+        //     console.log("hello");
+        //     socket.emit("event1","hi");
+        // })
+        // socket.on("event2",(data)=>{
+        //     document.write("data");
+        // }) -->

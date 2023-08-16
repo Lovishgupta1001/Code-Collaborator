@@ -1,0 +1,29 @@
+{
+  "name": "code-collaborator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lovishgupta1001/Code-Collaborator.git"
+  },
+  "author": "Lovish",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lovishgupta1001/Code-Collaborator/issues"
+  },
+  "homepage": "https://github.com/Lovishgupta1001/Code-Collaborator#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^7.3.1",
+    "nodemon": "^2.0.22",
+    "socket.io": "^4.7.1"
+  }
+}
